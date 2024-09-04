@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proxylab</title>
+    <link
+      rel="shortcut icon"
+      href="./images/png/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <!-- HEADER START  -->
+    <header>
+      <!-- NAVBAR START  -->
+      <nav class="flex items-center justify-between w-[90%] m-auto py-7">
+        <img src="../images/svg/logo.light.svg" alt="logo" />
+        <input id="check" type="checkbox" />
+        <ul class="flex gap-7 links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing & Plans</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#"> About Us</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <button class="main_btn max-[444px]:hidden">Contact Us</button>
+          <label class="check" for="check">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </label>
+        </div>
+      </nav>
+      <!-- NAVBAR END  -->
+    </header>
+    <!-- HEADER END  -->
+    <!-- MAIN START  -->
+    <main>
+      <!-- HERO START  -->
+      <section
+        class="hero relative w-[90%] m-auto grid grid-cols-2 gap-7 max-[820px]:grid-cols-1 my-11"
+      >
+        <img
+          class="absolute z-20 right-[37%] top-[50%] max-[1215px]:hidden"
+          src="../images/png/team_hero.png"
+          alt="avatars"
+        />
+        <div class="hero_left pt-11">
+          <p
+            class="text-7xl font-extrabold max-xl:text-5xl max-[385px]:text-3xl"
+          >
+            Best <span class="text-orange-0">Marketing</span> Digital Agency
+          </p>
+          <p class="text-xl opacity-55 w-[71%] py-11 max-lg:w-[100%]">
+            Various versions have evolved over the years, sometimes by accident,
+            sometimes on purpose
+          </p>
+          <div
+            class="gap-7 flex items-center max-[339px]:flex-wrap max-[339px]:justify-center"
+          >
+            <button class="main_btn">Get Started</button>
+            <button class="text-orange-0">
+              <i class="fa fa-play bg-[white] p-3 rounded-full"></i> Watch video
+            </button>
+          </div>
+        </div>
+        <div class="hero_right">
+          <img src="../images/png/girls.png" alt="girls" />
+        </div>
+      </section>
+      <!-- HERO END  -->
+      <!-- CLIENTS START -->
+      <section class="clients m-auto w-[90%] my-32 bg-red">
+        <p class="text-center font-semibold text-lg">OUR TRUSTED CLIENTS</p>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client1.svg" />
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client2.svg" />
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client3.svg" />
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client4.svg" />
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client5.svg" />
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client1.svg" />
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client2.svg" />
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client3.svg" />
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="../images/svg/client4.svg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- CLIENTS END  -->
+      <!-- WEDO START  -->
+      <section class="wedo grid grid-cols-2 gap-7">
+        <div class="wedo_left">
+          <p>What we do</p>
+          <p>We Are Here To Help You Build Your Business</p>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit of the
+            voluptatem accusantium lorem sit doloremque, totam rem aperiam,
+            eaque ipsa quae ab illo invento veritatis quasi architecto beatae
+            vitae dicta.
+          </p>
+          <button class="main_btn">Explore all service</button>
+        </div>
+        <div class="wedo_right grid grid-cols-2 gap-5">
+          <div class="wedo_card bg-[white]">
+            <img src="../images/svg/icon1.svg" alt="icon" />
+            <p>Digital Marketing</p>
+            <p>
+              That is the simply dummy text the printing and typesetting
+              industry.
+            </p>
+            <a target="_blank" href="https://kun.uz">Read more</a>
+          </div>
+        </div>
+      </section>
+      <!-- WEDO END  -->
+    </main>
+    <!-- MAIN END  -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 400, // Autoplay delay set to 0.4s
+          disableOnInteraction: false, // Continue autoplay after user interaction
+        },
+      });
+    </script>
+  </body>
+</html>
