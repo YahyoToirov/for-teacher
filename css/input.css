@@ -29,6 +29,14 @@ body {
   text-align: center;
   color: #fff;
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(11px);
+  z-index: 101;
+}
 #check,
 .check {
   display: none;
@@ -72,4 +80,10 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+i,
+button,
+a,
+img {
+  cursor: pointer;
 }
